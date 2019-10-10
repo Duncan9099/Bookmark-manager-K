@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/student/Desktop/Projects/bookmark_manager_with_Nat/spec/bookmarks_spec.rb": [
+      "/Users/duncanskinner/Documents/makers_academy/course/week_4/Bookmark-manager-K/spec/bookmarks_spec.rb": [
         1,
         1,
         null,
@@ -73,7 +73,7 @@
         null,
         null
       ],
-      "/Users/student/Desktop/Projects/bookmark_manager_with_Nat/spec/database_helpers.rb": [
+      "/Users/duncanskinner/Documents/makers_academy/course/week_4/Bookmark-manager-K/spec/database_helpers.rb": [
         1,
         null,
         1,
@@ -81,7 +81,25 @@
         1,
         null
       ],
-      "/Users/student/Desktop/Projects/bookmark_manager_with_Nat/spec/database_connection_spec.rb": [
+      "/Users/duncanskinner/Documents/makers_academy/course/week_4/Bookmark-manager-K/spec/comment_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/duncanskinner/Documents/makers_academy/course/week_4/Bookmark-manager-K/lib/comment.rb": [
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/duncanskinner/Documents/makers_academy/course/week_4/Bookmark-manager-K/spec/database_connection_spec.rb": [
         1,
         null,
         1,
@@ -103,7 +121,7 @@
         null,
         null
       ],
-      "/Users/student/Desktop/Projects/bookmark_manager_with_Nat/spec/features/add_new_bookmark_spec.rb": [
+      "/Users/duncanskinner/Documents/makers_academy/course/week_4/Bookmark-manager-K/spec/features/add_new_bookmark_spec.rb": [
         1,
         null,
         1,
@@ -125,7 +143,25 @@
         null,
         null
       ],
-      "/Users/student/Desktop/Projects/bookmark_manager_with_Nat/spec/features/delete_bookmark_spec.rb": [
+      "/Users/duncanskinner/Documents/makers_academy/course/week_4/Bookmark-manager-K/spec/features/adding_comment_spec.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/duncanskinner/Documents/makers_academy/course/week_4/Bookmark-manager-K/spec/features/delete_bookmark_spec.rb": [
         1,
         1,
         1,
@@ -137,7 +173,7 @@
         null,
         null
       ],
-      "/Users/student/Desktop/Projects/bookmark_manager_with_Nat/spec/features/home_page_spec.rb": [
+      "/Users/duncanskinner/Documents/makers_academy/course/week_4/Bookmark-manager-K/spec/features/home_page_spec.rb": [
         null,
         null,
         1,
@@ -147,7 +183,7 @@
         null,
         null
       ],
-      "/Users/student/Desktop/Projects/bookmark_manager_with_Nat/spec/features/update_bookmark_spec.rb": [
+      "/Users/duncanskinner/Documents/makers_academy/course/week_4/Bookmark-manager-K/spec/features/update_bookmark_spec.rb": [
         1,
         1,
         1,
@@ -167,7 +203,7 @@
         null,
         null
       ],
-      "/Users/student/Desktop/Projects/bookmark_manager_with_Nat/spec/features/view_bookmarks_spec.rb": [
+      "/Users/duncanskinner/Documents/makers_academy/course/week_4/Bookmark-manager-K/spec/features/view_bookmarks_spec.rb": [
         1,
         null,
         1,
@@ -185,6 +221,6 @@
         null
       ]
     },
-    "timestamp": 1570722229
+    "timestamp": 1570729614
   }
 }
