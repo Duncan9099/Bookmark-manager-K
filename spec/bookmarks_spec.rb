@@ -26,7 +26,7 @@ describe Bookmarks do
   describe '#create' do
     it 'creates a new bookmark' do
       bookmark = Bookmarks.create(url: 'http://www.test.com', title: 'Test')
-      persisted_data = persisted_data(id: bookmark.id)
+      persisted_data = persisted_data(table: 'bookmarks', id: bookmark.id)
 
       expect(bookmark).to be_a Bookmarks
       expect(bookmark.id).to eq persisted_data.first['id']
@@ -53,18 +53,29 @@ describe Bookmarks do
       Bookmarks.delete(id: bookmark.id)
       expect(Bookmarks.all.length).to eq(1)
       expect(Bookmarks.all.first.title).to eq(bookmark2.title)
-   end
+    end
   end
 
   describe '#get_bookmark' do
     context 'given an id' do
       it 'returns a bookmark' do
         bookmark = Bookmarks.create(url: 'http://www.test1.com', title: 'Test1')
-        
+
         expect(Bookmarks.get_bookmark(bookmark.id)).to be_a(Bookmarks)
         expect(Bookmarks.get_bookmark(bookmark.id).url).to eq(bookmark.url)
         expect(Bookmarks.get_bookmark(bookmark.id).title).to eq(bookmark.title)
       end
+    end
+  end
+
+  describe '#comments' do
+    it 'adds a comment' do
+      bookmark = Bookmarks.create(url: 'http://www.test1.com', title: 'Test1')
+      DatabaseConnection.query("INSERT INTO comments (id, text, bookmark_id) VALUES(1, 'Test comment', #{bookmark.id});")
+
+      comment = bookmark.comments.first
+
+      expect(comment['text']).to eq 'Test comment'
     end
   end
 end

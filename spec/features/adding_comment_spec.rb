@@ -8,7 +8,7 @@ feature 'comment' do
 
     click_button 'Comment'
 
-    fill_in 'Comment', with: "Comment placed here"
+    fill_in 'comment', with: "Comment placed here"
     click_button 'Submit'
 
     expect(page).to have_content "Comment placed here"

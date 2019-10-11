@@ -40,7 +40,11 @@ class Bookmarks
     Bookmarks.new(id: result[0]['id'], title: result[0]['title'], url: result[0]['url'])
   end
 
-  private 
+  def comments
+    DatabaseConnection.query("SELECT * FROM comments WHERE bookmark_id = #{id};")
+  end
+
+  private
 
   def self.is_url?(url)
     url =~ /\A#{URI::regexp(['http', 'https'])}\z/

@@ -71,28 +71,42 @@
         null,
         null,
         null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
         null
       ],
       "/Users/duncanskinner/Documents/makers_academy/course/week_4/Bookmark-manager-K/spec/database_helpers.rb": [
         1,
         null,
         1,
-        1,
-        1,
+        2,
+        2,
         null
       ],
       "/Users/duncanskinner/Documents/makers_academy/course/week_4/Bookmark-manager-K/spec/comment_spec.rb": [
         1,
+        1,
+        1,
         null,
         1,
         1,
         1,
+        1,
+        1,
         null,
+        1,
         null,
-        null,
-        null
-      ],
-      "/Users/duncanskinner/Documents/makers_academy/course/week_4/Bookmark-manager-K/lib/comment.rb": [
+        1,
+        1,
         1,
         1,
         null,
@@ -221,6 +235,6 @@
         null
       ]
     },
-    "timestamp": 1570729614
+    "timestamp": 1570797852
   }
 }
