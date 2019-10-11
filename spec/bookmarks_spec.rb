@@ -2,7 +2,7 @@ require 'bookmarks'
 require 'database_helpers'
 
 describe Bookmarks do
-
+  let(:comment_class) { double(:comment_class)}
   subject(:bookmarks) { described_class.new }
 
   describe '#all' do
@@ -69,13 +69,11 @@ describe Bookmarks do
   end
 
   describe '#comments' do
-    it 'adds a comment' do
+    it 'calls .where on the Comment class' do
       bookmark = Bookmarks.create(url: 'http://www.test1.com', title: 'Test1')
-      DatabaseConnection.query("INSERT INTO comments (id, text, bookmark_id) VALUES(1, 'Test comment', #{bookmark.id});")
+      expect(comment_class).to receive(:where).with(bookmark_id: bookmark.id)
 
-      comment = bookmark.comments.first
-
-      expect(comment['text']).to eq 'Test comment'
+      bookmark.comments(comment_class)
     end
   end
 end
